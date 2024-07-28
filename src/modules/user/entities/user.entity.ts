@@ -1,13 +1,20 @@
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+} from 'typeorm';
 
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn } from 'typeorm';
-
-@Entity('portal_user')
+@Entity('th_sys_user')
 export class User {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  username: string;
+  userId: string;
+
+  @Column()
+  userAccount: string;
 }
 
 // @Entity('portal_logger')

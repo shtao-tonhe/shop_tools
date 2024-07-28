@@ -1,16 +1,20 @@
-
-import { MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common';
+import {
+  MiddlewareConsumer,
+  Module,
+  NestModule,
+  RequestMethod,
+} from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { APP_GUARD } from '@nestjs/core';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
-import databaseConfig from './config/databaseConfig'
-import authConfig from './config/authConfig'
+import databaseConfig from './config/databaseConfig';
+import authConfig from './config/authConfig';
 
-import UserMiddleware from './common/middleware/user.middleware'
+import UserMiddleware from './common/middleware/user.middleware';
 // import { LoggerMiddleware } from './common/middleware/logger.middleware'
 
-import { ConfigModule as SystemConfig } from './config/app.modules'
+import { ConfigModule as SystemConfig } from './config/app.modules';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -36,8 +40,8 @@ import { RobotModule } from './modules/robot/robot.module';
       port: 3306,
       username: 'root',
       password: 'root',
-      database: databaseConfig.database,
-      timezone: "+0:00", // 设置时区
+      database: 'th_sass_sales_tool',
+      timezone: '+0:00', // 设置时区
       // entities: [__dirname + `/**/*.entity{.ts,.js}`],
       autoLoadEntities: true, //自动将实体加入entities
       // synchronize: true,

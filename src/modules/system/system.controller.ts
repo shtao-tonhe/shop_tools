@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { SystemService } from './system.service';
 import { CreateSystemDto } from './dto/create-system.dto';
 import { UpdateSystemDto } from './dto/update-system.dto';
@@ -16,8 +24,8 @@ export class SystemController {
   config() {
     return {
       code: 200,
-      msg: "success",
-      data: this.systemService.config()
+      msg: 'success',
+      data: this.systemService.config(),
     };
   }
 

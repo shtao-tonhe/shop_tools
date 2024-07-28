@@ -4,6 +4,9 @@ import * as session from 'express-session';
 
 import * as cors from 'cors';
 
+import * as dotenv from 'dotenv';
+dotenv.config({ path: './.env.development' });
+
 // import { TransformInterceptor } from "./common/interceptors/transform.interceptor";
 // import { UseroptlogInterceptor } from "./common/interceptors/Useroptlog.interceptor";
 // import { AuthGuard } from "./common/guards/auth.guard";

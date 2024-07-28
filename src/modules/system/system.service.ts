@@ -10,36 +10,36 @@ export class SystemService {
 
   config() {
     return {
-      title: "YiLong village website",
+      title: 'YiLong village website',
       footer: {
         links: [
           {
             sort: 0,
-            url: "https://vip.hzylsq.com",
+            url: 'https://vip.hzylsq.com',
             isExternal: true,
-            label: "亿龙管理平台"
+            label: '亿龙管理平台',
           },
           {
             sort: 1,
-            url: "https://www.baidu.com",
+            url: 'https://www.baidu.com',
             isExternal: true,
-            label: "xx镇网站"
+            label: 'xx镇网站',
           },
           {
             sort: 2,
-            url: "https://www.hzylsq.com/",
+            url: 'https://www.hzylsq.com/',
             isExternal: true,
-            label: "南浔镇网站"
+            label: '南浔镇网站',
           },
           {
             sort: 3,
-            url: "https://www.hzylsq.com/",
+            url: 'https://www.hzylsq.com/',
             isExternal: true,
-            label: "南浔镇网站"
+            label: '南浔镇网站',
           },
-        ]
+        ],
       },
-    }
+    };
   }
 
   findOne(id: number) {
